@@ -12,6 +12,9 @@ namespace ConsoleApp2
             Girl yy1 = new Girl();
             Girl.Beauty();
             Girl.nose();
+            AttackHelicopter qq1 = new AttackHelicopter();
+            AttackHelicopter.Strange();
+            AttackHelicopter.Mystery();
         }
     }
     class Parents
@@ -28,13 +31,19 @@ namespace ConsoleApp2
             Console.ReadKey();
             Console.WriteLine();
         }
+        public static void Strange()
+        {
+            Console.Write("Тут же нет никакого подвоха??");
+            Console.ReadKey();
+            Console.WriteLine();
+        }
 
     }
     class Boy : Parents
     {
         public static void eyes()
         {
-            Console.Write("У вашего сына карие глаза, весь в отца!!");
+            Console.Write("У вашего сына карие глаза, весь в отца!");
             Console.ReadKey();
             Console.WriteLine();
         }
@@ -48,5 +57,15 @@ namespace ConsoleApp2
             Console.WriteLine();
         }
     }
-    
+
+    class AttackHelicopter : Parents
+    {
+        public static void Mystery()
+        {
+            Console.Write(".....а неведому зверюшку");
+            Console.ReadKey();
+            Console.WriteLine();
+        }
+    }
+
 }
