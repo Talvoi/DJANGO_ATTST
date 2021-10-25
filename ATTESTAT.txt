@@ -34,7 +34,7 @@ namespace ConsoleApp2
     {
         public static void eyes()
         {
-            Console.Write("У вашего сына карие глаза, весь в отца!");
+            Console.Write("У вашего сына карие глаза, весь в отца!!");
             Console.ReadKey();
             Console.WriteLine();
         }
