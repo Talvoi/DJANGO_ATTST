@@ -1,0 +1,52 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Mains
+    {
+        static void Main(string[] args)
+        {
+            Boy xy1 = new Boy();
+            Boy.Football();
+            Boy.eyes();
+            Girl yy1 = new Girl();
+            Girl.Beauty();
+            Girl.nose();
+        }
+    }
+    class Parents
+    {
+        public static void Beauty()
+        {
+            Console.Write("Ваша дочка так прекрасна как и вы!");
+            Console.ReadKey();
+            Console.WriteLine();
+        }
+        public static void Football()
+        {
+            Console.WriteLine("Ваш сын просто обожает футбол и немного боевые исскуства!");
+            Console.ReadKey();
+            Console.WriteLine();
+        }
+
+    }
+    class Boy : Parents
+    {
+        public static void eyes()
+        {
+            Console.Write("У вашего сына карие глаза, весь в отца!");
+            Console.ReadKey();
+            Console.WriteLine();
+        }
+    }
+    class Girl : Parents
+    {
+        public static void nose()
+        {
+            Console.Write("У вашей дочки нос точь в точь как у мамы!");
+            Console.ReadKey();
+            Console.WriteLine();
+        }
+    }
+    
+}
