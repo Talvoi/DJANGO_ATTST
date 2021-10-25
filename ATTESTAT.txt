@@ -15,6 +15,8 @@ namespace ConsoleApp2
             AttackHelicopter qq1 = new AttackHelicopter();
             AttackHelicopter.Strange();
             AttackHelicopter.Mystery();
+            DemonHunter dh1 = new DemonHunter();
+            DemonHunter.Eliminate();
         }
     }
     class Parents
@@ -33,7 +35,7 @@ namespace ConsoleApp2
         }
         public static void Strange()
         {
-            Console.Write("Тут же нет никакого подвоха??");
+            Console.WriteLine("Тут же нет никакого подвоха??");
             Console.ReadKey();
             Console.WriteLine();
         }
@@ -43,7 +45,7 @@ namespace ConsoleApp2
     {
         public static void eyes()
         {
-            Console.Write("У вашего сына карие глаза, весь в отца!");
+            Console.WriteLine("У вашего сына карие глаза, весь в отца!");
             Console.ReadKey();
             Console.WriteLine();
         }
@@ -52,7 +54,7 @@ namespace ConsoleApp2
     {
         public static void nose()
         {
-            Console.Write("У вашей дочки нос точь в точь как у мамы!");
+            Console.WriteLine("У вашей дочки нос точь в точь как у мамы!");
             Console.ReadKey();
             Console.WriteLine();
         }
@@ -62,7 +64,17 @@ namespace ConsoleApp2
     {
         public static void Mystery()
         {
-            Console.Write(".....а неведому зверюшку");
+            Console.WriteLine(".....а неведому зверюшку");
+            Console.ReadKey();
+            Console.WriteLine();
+        }
+    }
+
+    class DemonHunter
+    {
+        public static void Eliminate()
+        {
+            Console.WriteLine("Дабы уберечь мир от беды явился Ван Хельсинг и избавил вас от чудища!");
             Console.ReadKey();
             Console.WriteLine();
         }
